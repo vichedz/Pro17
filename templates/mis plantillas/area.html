@@ -1,0 +1,17 @@
+<!-- area.html -->
+<table>
+  <thead>
+    <tr>
+      <th>Nombre del Área</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for area in areas %}
+    <tr>
+      <td>{{ area.nombre_del_area }}</td>
+      <td>{{ area.descripcion }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

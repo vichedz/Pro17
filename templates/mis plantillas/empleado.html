@@ -1,0 +1,21 @@
+<!-- empleado.html -->
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Edad</th>
+      <th>Area ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for empleado in empleados %}
+    <tr>
+      <td>{{ empleado.nombre }}</td>
+      <td>{{ empleado.apellido }}</td>
+      <td>{{ empleado.edad }}</td>
+      <td>{{ empleado.area_id }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
